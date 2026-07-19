@@ -1,14 +1,9 @@
-const yearSpan = document.getElementById("year");
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const downloadCvBtn = document.getElementById("downloadCvBtn");
-if (downloadCvBtn) {
-  downloadCvBtn.addEventListener("click", () => {
-    window.open("CV_Lucas_Monaldi.pdf", "_blank");
-  });
-}
+
+document.getElementById("downloadCvBtn").addEventListener("click", () => {
+  window.open("cv.pdf", "_blank");
+});
 
 document.querySelectorAll(".lang-points").forEach(container => {
   const points = parseInt(container.dataset.points);

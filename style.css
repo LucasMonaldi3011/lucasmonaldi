@@ -60,23 +60,23 @@ body {
 
 /* HERO */
 .hero {
-  padding: 120px 7% 80px;
+  padding: 100px 7% 60px;
   text-align: center;
 }
 
 .hero-inner h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  margin-bottom: 8px;
 }
 
 .hero-inner h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   opacity: 0.85;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .hero-inner button {
-  padding: 12px 26px;
+  padding: 10px 22px;
   border-radius: 999px;
   border: none;
   background: var(--blue3);
@@ -93,24 +93,24 @@ body {
 
 /* SECTIONS */
 .section {
-  padding: 60px 7%;
+  padding: 40px 7%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
-  padding: 40px;
+  padding: 28px 26px;
   border-radius: var(--radius);
-  max-width: 900px;
+  max-width: 720px;          /* plus petit */
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
   color: var(--white);
   text-align: center;
 }
@@ -119,23 +119,34 @@ body {
   line-height: 1.6;
   opacity: 0.9;
   text-align: center;
+  font-size: 0.98rem;
 }
 
 /* COMPÉTENCES */
 .skills-list {
   display: grid;
-  gap: 20px;
+  gap: 14px;
 }
 
 .skill-item {
   background: rgba(255, 255, 255, 0.08);
-  padding: 20px;
-  border-radius: var(--radius);
+  padding: 14px 12px;
+  border-radius: 12px;
   transition: var(--transition);
 }
 
+.skill-item h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.skill-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .skill-item:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -143,7 +154,7 @@ body {
 .lang-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
 }
 
@@ -151,16 +162,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.95rem;
 }
 
 .lang-points {
   display: flex;
-  gap: 6px;
+  gap: 5px;
 }
 
 .lang-points span {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
@@ -171,8 +183,8 @@ body {
 
 /* CONTACT */
 .contact-info p {
-  margin: 8px 0;
-  font-size: 1rem;
+  margin: 6px 0;
+  font-size: 0.95rem;
   text-align: center;
 }
 
@@ -188,6 +200,27 @@ body {
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 20px;
+  padding: 18px;
   opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card {
+    padding: 22px 18px;
+    max-width: 90%;
+  }
+
+  .hero {
+    padding: 80px 5% 40px;
+  }
+
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-inner h2 {
+    font-size: 1.1rem;
+  }
 }

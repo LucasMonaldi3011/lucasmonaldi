@@ -1,110 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio - Lucas Monaldi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Portfolio - Lucas Monaldi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="logo">Lucas Monaldi</div>
-    <nav class="nav">
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#languages">Langues</a>
-      <a href="#contact">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Lucas Monaldi</div>
+
+            <div class="nav-links">
+                <a href="#about" class="active">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#languages">Langues</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Lucas Monaldi</h1>
-      <h2>Futur étudiant en informatique</h2>
-      <button id="downloadCvBtn">Télécharger mon CV</button>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-greeting">Bienvenue</div>
 
-  <main>
+            <h1 class="glitch">Lucas Monaldi</h1>
 
-    <section id="about" class="section card">
-      <h2 class="section-title">À propos</h2>
-      <p class="section-text">
-        Titulaire d'un Baccalauréat Technologique en STMG option Mercatique obtenu au Lycée Samuel de Champlain, j’ai développé une solide rigueur organisationnelle, un sens de la gestion de projet et un esprit logique affûté. Mon parcours a été marqué par ma sélection en tant que lauréat du Projet d'Excellence, un dispositif qui m'a permis de perfectionner mon expression orale et de découvrir les exigences du monde professionnel lors d'une immersion au sein de la structure financière Natixis. Fort de plusieurs expériences pratiques sur le terrain à travers des stages d'observation en cabinet de kinésithérapie et dans le secteur du bâtiment—où j'ai cultivé mon sens du contact humain, ma discipline et un fort esprit d'équipe—je m'oriente aujourd'hui avec passion vers les technologies du numérique. Je poursuis désormais mon parcours en intégrant un BTS Services Informatiques aux Organisations (SIO) pour la rentrée 2026, avec l'objectif de mettre mes compétences logiques et mon adaptabilité au service d'une entreprise dans le cadre d'une alternance technique.
-      </p>
+            <div class="role">
+                <span class="typewriter">Futur étudiant en informatique</span>
+            </div>
+
+            <p class="hero-line">
+                Passionné par les technologies du numérique et motivé à intégrer un BTS SIO en alternance.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="downloadCvBtn">Télécharger mon CV</button>
+            </div>
+        </div>
     </section>
 
-    <section id="skills" class="section card">
-      <h2 class="section-title">Compétences</h2>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2 class="section-title">À propos</h2>
 
-      <div class="skills-list">
-
-        <div class="skill-item">
-          <h3>Esprit logique & d'analyse</h3>
-          <p>Capacité à décomposer des problèmes complexes, à analyser des données et à concevoir des solutions structurées et efficaces.</p>
+        <div class="card">
+            <p class="section-text">
+                Titulaire d'un Baccalauréat Technologique en STMG option Mercatique obtenu au Lycée Samuel de Champlain, j’ai développé une solide rigueur organisationnelle, un sens de la gestion de projet et un esprit logique affûté.
+                Mon parcours a été marqué par ma sélection en tant que lauréat du Projet d'Excellence, un dispositif qui m'a permis de perfectionner mon expression orale et de découvrir les exigences du monde professionnel lors d'une immersion au sein de la structure financière Natixis.
+                Fort de plusieurs expériences pratiques sur le terrain à travers des stages d'observation en cabinet de kinésithérapie et dans le secteur du bâtiment—où j'ai cultivé mon sens du contact humain, ma discipline et un fort esprit d'équipe—je m'oriente aujourd'hui avec passion vers les technologies du numérique.
+                Je poursuis désormais mon parcours en intégrant un BTS Services Informatiques aux Organisations (SIO) pour la rentrée 2026, avec l'objectif de mettre mes compétences logiques et mon adaptabilité au service d'une entreprise dans le cadre d'une alternance technique.
+            </p>
         </div>
-
-        <div class="skill-item">
-          <h3>Travail en équipe & collaboration</h3>
-          <p>Aptitude à s'intégrer rapidement au sein d'un groupe, à collaborer efficacement sur des projets collectifs et à communiquer de manière fluide avec différents profils professionnels.</p>
-        </div>
-
-        <div class="skill-item">
-          <h3>Rigueur & gestion de l'organisation</h3>
-          <p>Capacité à planifier des tâches, à respecter des flux de travail stricts et des consignes de sécurité, ainsi qu'à gérer les priorités quotidiennes avec méthode.</p>
-        </div>
-
-        <div class="skill-item">
-          <h3>Maîtrise des outils bureautiques</h3>
-          <p>Utilisation courante et efficace de la suite bureautique pour concevoir, structurer et présenter des documents professionnels, des rapports d'activité ou des tableaux de suivi.</p>
-        </div>
-
-      </div>
     </section>
 
-    <section id="languages" class="section card">
-      <h2 class="section-title">Langues</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Compétences</h2>
 
-      <div class="lang-list">
+        <div class="card">
+            <div class="skills-list">
 
-        <div class="lang-item">
-          <span>Français</span>
-          <div class="lang-points" data-points="5"></div>
+                <div class="skill-item">
+                    <h3>Esprit logique & d'analyse</h3>
+                    <p>Capacité à décomposer des problèmes complexes, à analyser des données et à concevoir des solutions structurées et efficaces.</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Travail en équipe & collaboration</h3>
+                    <p>Aptitude à s'intégrer rapidement au sein d'un groupe, à collaborer efficacement sur des projets collectifs et à communiquer de manière fluide avec différents profils professionnels.</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Rigueur & gestion de l'organisation</h3>
+                    <p>Capacité à planifier des tâches, à respecter des flux de travail stricts et des consignes de sécurité, ainsi qu'à gérer les priorités quotidiennes avec méthode.</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Maîtrise des outils bureautiques</h3>
+                    <p>Utilisation courante et efficace de la suite bureautique pour concevoir, structurer et présenter des documents professionnels.</p>
+                </div>
+
+            </div>
         </div>
-
-        <div class="lang-item">
-          <span>Espagnol</span>
-          <div class="lang-points" data-points="4"></div>
-        </div>
-
-        <div class="lang-item">
-          <span>Anglais</span>
-          <div class="lang-points" data-points="3"></div>
-        </div>
-
-      </div>
     </section>
 
-    <section id="contact" class="section card">
-      <h2 class="section-title">Contact</h2>
+    <!-- LANGUAGES -->
+    <section id="languages" class="section">
+        <h2 class="section-title">Langues</h2>
 
-      <div class="contact-info">
-        <p><strong>Email :</strong> lucasmonaldi94430@gmail.com</p>
-        <p><strong>Téléphone :</strong> 07 69 60 78 52</p>
-        <p><strong>LinkedIn :</strong> <a href="#" target="_blank">www.linkedin.com/in/lucasmonaldi</a></p>
-        <p><strong>GitHub :</strong> <a href="#" target="_blank">https://github.com/LucasMonaldi3011</a></p>
-      </div>
+        <div class="card">
+            <div class="lang-list">
 
+                <div class="lang-item">
+                    <span>Français</span>
+                    <div class="lang-points" data-points="5"></div>
+                </div>
+
+                <div class="lang-item">
+                    <span>Espagnol</span>
+                    <div class="lang-points" data-points="4"></div>
+                </div>
+
+                <div class="lang-item">
+                    <span>Anglais</span>
+                    <div class="lang-points" data-points="3"></div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-  </main>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Lucas Monaldi — Portfolio</p>
-  </footer>
+        <div class="card">
+            <div class="contact-info">
+                <p><strong>Email :</strong> lucasmonaldi94430@gmail.com</p>
+                <p><strong>Téléphone :</strong> 07 69 60 78 52</p>
+                <p><strong>LinkedIn :</strong> <a href="#" target="_blank">www.linkedin.com/in/lucasmonaldi</a></p>
+                <p><strong>GitHub :</strong> <a href="#" target="_blank">https://github.com/LucasMonaldi3011</a></p>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        © <span id="year"></span> Lucas Monaldi — Portfolio
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

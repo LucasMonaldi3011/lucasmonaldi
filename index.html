@@ -9,16 +9,18 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Lucas Monaldi</div>
 
             <div class="nav-links">
-                <a href="#about" class="active">À propos</a>
-                <a href="#skills">Compétences</a>
-                <a href="#languages">Langues</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" class="active">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#languages">Languages</a>
+                <a href="#projects">Projects</a>
             </div>
 
             <button class="hamburger" id="hamburger">
@@ -27,7 +29,7 @@
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- ===== HERO ===== -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-greeting">Bienvenue</div>
@@ -48,92 +50,196 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <h2 class="section-title">À propos</h2>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
 
-        <div class="card">
-            <p class="section-text">
-                Titulaire d'un Baccalauréat Technologique en STMG option Mercatique obtenu au Lycée Samuel de Champlain, j’ai développé une solide rigueur organisationnelle, un sens de la gestion de projet et un esprit logique affûté.
-                Mon parcours a été marqué par ma sélection en tant que lauréat du Projet d'Excellence, un dispositif qui m'a permis de perfectionner mon expression orale et de découvrir les exigences du monde professionnel lors d'une immersion au sein de la structure financière Natixis.
-                Fort de plusieurs expériences pratiques sur le terrain à travers des stages d'observation en cabinet de kinésithérapie et dans le secteur du bâtiment—où j'ai cultivé mon sens du contact humain, ma discipline et un fort esprit d'équipe—je m'oriente aujourd'hui avec passion vers les technologies du numérique.
-                Je poursuis désormais mon parcours en intégrant un BTS Services Informatiques aux Organisations (SIO) pour la rentrée 2026, avec l'objectif de mettre mes compétences logiques et mon adaptabilité au service d'une entreprise dans le cadre d'une alternance technique.
-            </p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Titulaire d’un <strong>Baccalauréat Technologique STMG option Mercatique</strong>,
+                        j’ai développé une solide rigueur organisationnelle, un sens de la gestion de projet
+                        et un esprit logique affûté.
+                    </p>
+                    <p>
+                        Sélectionné comme lauréat du Projet d’Excellence, j’ai pu perfectionner mon expression orale
+                        et découvrir les exigences du monde professionnel lors d’une immersion chez Natixis.
+                    </p>
+                    <p>
+                        Fort de plusieurs expériences sur le terrain (cabinet de kinésithérapie, secteur du bâtiment),
+                        j’ai cultivé mon sens du contact humain, ma discipline et un fort esprit d’équipe.
+                    </p>
+                    <p>
+                        Aujourd’hui, je m’oriente avec passion vers les technologies du numérique
+                        et je poursuis mon parcours en intégrant un <strong>BTS SIO</strong> pour la rentrée 2026,
+                        avec l’objectif de rejoindre une entreprise en alternance.
+                    </p>
+
+                    <div class="about-social">
+                        <a href="https://github.com/ton-github" target="_blank" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/lucasmonaldi" target="_blank" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="1">0</span>
+                        <span class="stat-label">Year of Study</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Experiences</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Skills</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-        <h2 class="section-title">Compétences</h2>
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
 
-        <div class="card">
-            <div class="skills-list">
+            <div class="timeline">
 
-                <div class="skill-item">
-                    <h3>Esprit logique & d'analyse</h3>
-                    <p>Capacité à décomposer des problèmes complexes, à analyser des données et à concevoir des solutions structurées et efficaces.</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>BTS SIO – Services Informatiques aux Organisations</h3>
+                        <span class="timeline-date">2026 – </span>
+                        <p>Parcours orienté vers le développement, les systèmes, les réseaux et l’alternance en entreprise.</p>
+                    </div>
                 </div>
 
-                <div class="skill-item">
-                    <h3>Travail en équipe & collaboration</h3>
-                    <p>Aptitude à s'intégrer rapidement au sein d'un groupe, à collaborer efficacement sur des projets collectifs et à communiquer de manière fluide avec différents profils professionnels.</p>
-                </div>
-
-                <div class="skill-item">
-                    <h3>Rigueur & gestion de l'organisation</h3>
-                    <p>Capacité à planifier des tâches, à respecter des flux de travail stricts et des consignes de sécurité, ainsi qu'à gérer les priorités quotidiennes avec méthode.</p>
-                </div>
-
-                <div class="skill-item">
-                    <h3>Maîtrise des outils bureautiques</h3>
-                    <p>Utilisation courante et efficace de la suite bureautique pour concevoir, structurer et présenter des documents professionnels.</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat STMG – Lycée Samuel de Champlain</h3>
+                        <span class="timeline-date">2023 – 2026</span>
+                        <p>Option Mercatique, gestion de projet, organisation, communication professionnelle.</p>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- LANGUAGES -->
-    <section id="languages" class="section">
-        <h2 class="section-title">Langues</h2>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
 
-        <div class="card">
-            <div class="lang-list">
+            <div class="skills-grid">
+                <span class="skill tech">Logical Thinking</span>
+                <span class="skill tech">Teamwork</span>
+                <span class="skill tech">Organization</span>
+                <span class="skill tech">Office Tools</span>
+            </div>
 
-                <div class="lang-item">
-                    <span>Français</span>
-                    <div class="lang-points" data-points="5"></div>
+            <div class="environments-grid">
+                <span class="skill env">Windows</span>
+                <span class="skill env">Office Suite</span>
+                <span class="skill env">Project Management</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCES ===== -->
+    <section id="experiences" class="section experiences">
+        <div class="container">
+            <h2 class="section-title">Experiences</h2>
+
+            <div class="exp-grid">
+
+                <div class="exp-card">
+                    <h3>Natixis – Immersion Professionnelle</h3>
+                    <p><strong>Date:</strong> Projet d’Excellence</p>
+                    <p>Découverte du fonctionnement d’une structure financière, communication professionnelle, immersion métier.</p>
                 </div>
 
-                <div class="lang-item">
-                    <span>Espagnol</span>
-                    <div class="lang-points" data-points="4"></div>
+                <div class="exp-card">
+                    <h3>Cabinet de Kinésithérapie</h3>
+                    <p><strong>Date:</strong> Stage d’observation</p>
+                    <p>Relation client, discipline, organisation, gestion des flux de patients.</p>
                 </div>
 
-                <div class="lang-item">
-                    <span>Anglais</span>
-                    <div class="lang-points" data-points="3"></div>
+                <div class="exp-card">
+                    <h3>Secteur du Bâtiment</h3>
+                    <p><strong>Date:</strong> Stage d’observation</p>
+                    <p>Travail en équipe, respect des consignes, rigueur et coordination.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact</h2>
+    <!-- ===== LANGUAGES ===== -->
+    <section id="languages" class="section languages">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
 
-        <div class="card">
-            <div class="contact-info">
-                <p><strong>Email :</strong> lucasmonaldi94430@gmail.com</p>
-                <p><strong>Téléphone :</strong> 07 69 60 78 52</p>
-                <p><strong>LinkedIn :</strong> <a href="#" target="_blank">www.linkedin.com/in/lucasmonaldi</a></p>
-                <p><strong>GitHub :</strong> <a href="#" target="_blank">https://github.com/LucasMonaldi3011</a></p>
+            <div class="languages-list">
+
+                <div class="language-row">
+                    <span class="lang-name">Français</span>
+                    <span class="lang-dots">
+                        <span class="dot full"></span><span class="dot full"></span>
+                        <span class="dot full"></span><span class="dot full"></span>
+                        <span class="dot full"></span>
+                    </span>
+                </div>
+
+                <div class="language-row">
+                    <span class="lang-name">Espagnol</span>
+                    <span class="lang-dots">
+                        <span class="dot full"></span><span class="dot full"></span>
+                        <span class="dot full"></span><span class="dot full"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="language-row">
+                    <span class="lang-name">Anglais</span>
+                    <span class="lang-dots">
+                        <span class="dot full"></span><span class="dot full"></span>
+                        <span class="dot full"></span><span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">My projects</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Portfolio</h3>
+                    <p>Création de mon portfolio moderne en thème bleu premium.</p>
+                    <a href="#" target="_blank" class="project-link">See project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project</h3>
+                    <p>Ajoute ici un projet personnel ou scolaire.</p>
+                    <a href="#" target="_blank" class="project-link">See project →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         © <span id="year"></span> Lucas Monaldi — Portfolio
     </footer>

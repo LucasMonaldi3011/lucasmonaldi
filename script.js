@@ -1,6 +1,5 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
 document.getElementById("downloadCvBtn").addEventListener("click", () => {
   window.open("CV_Lucas_Monaldi.pdf", "_blank");
 });

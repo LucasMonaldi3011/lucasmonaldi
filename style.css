@@ -91,23 +91,26 @@ body {
   transform: translateY(-2px);
 }
 
-/* SECTIONS */
+/* SECTIONS — FIX CENTRAGE */
 .section {
   padding: 40px 7%;
   display: flex;
   justify-content: center;
 }
 
+/* CARD — VRAIMENT CENTRÉE */
 .card {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
   padding: 28px 26px;
   border-radius: var(--radius);
-  max-width: 720px;          /* plus petit */
+  max-width: 650px;        /* plus petit */
   width: 100%;
+  margin: 0 auto;          /* CENTRAGE RÉEL */
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* TITRES */
 .section-title {
   font-size: 1.6rem;
   margin-bottom: 16px;
@@ -135,16 +138,6 @@ body {
   transition: var(--transition);
 }
 
-.skill-item h3 {
-  margin: 0 0 6px;
-  font-size: 1rem;
-}
-
-.skill-item p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
 .skill-item:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.15);
@@ -155,14 +148,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 100%;
 }
 
 .lang-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.95rem;
 }
 
 .lang-points {
@@ -207,20 +198,3 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .card {
-    padding: 22px 18px;
-    max-width: 90%;
-  }
-
-  .hero {
-    padding: 80px 5% 40px;
-  }
-
-  .hero-inner h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-inner h2 {
-    font-size: 1.1rem;
-  }
-}

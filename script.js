@@ -11,3 +11,12 @@ if (downloadCvBtn) {
   });
 }
 
+// Génère les points pour les langues
+document.querySelectorAll(".lang-points").forEach(container => {
+  const points = parseInt(container.dataset.points);
+  for (let i = 1; i <= 5; i++) {
+    const dot = document.createElement("span");
+    if (i <= points) dot.classList.add("active");
+    container.appendChild(dot);
+  }
+});

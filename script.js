@@ -220,4 +220,4 @@ document.getElementById('downloadCvBtn').addEventListener('click', function() {
 // ============================================
 document.getElementById('year').textContent = new Date().getFullYear();
 
-console.log('🚀 Portfolio Lucas Monaldi – thème bleu premium actif !');
+console.log('Portfolio Lucas Monaldi');

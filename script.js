@@ -12,3 +12,27 @@ document.querySelectorAll(".lang-points").forEach(container => {
     container.appendChild(dot);
   }
 });
+/* ============================
+   Navbar scroll effect
+============================ */
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+/* ============================
+   Menu mobile (hamburger)
+============================ */
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+if (hamburger) {
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("open");
+    });
+}

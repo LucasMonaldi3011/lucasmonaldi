@@ -2,7 +2,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 
 document.getElementById("downloadCvBtn").addEventListener("click", () => {
-  window.open("cv.pdf", "_blank");
+  window.open("CV_Lucas_Monaldi.pdf", "_blank");
 });
 
 document.querySelectorAll(".lang-points").forEach(container => {

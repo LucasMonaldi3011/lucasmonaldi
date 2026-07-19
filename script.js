@@ -6,12 +6,10 @@ if (yearSpan) {
 const downloadCvBtn = document.getElementById("downloadCvBtn");
 if (downloadCvBtn) {
   downloadCvBtn.addEventListener("click", () => {
-    // Remplace "cv.pdf" par le nom réel de ton CV
-    window.open("cv.pdf", "_blank");
+    window.open("CV_Lucas_Monaldi.pdf", "_blank");
   });
 }
 
-// Génère les points pour les langues
 document.querySelectorAll(".lang-points").forEach(container => {
   const points = parseInt(container.dataset.points);
   for (let i = 1; i <= 5; i++) {

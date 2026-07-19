@@ -5,7 +5,7 @@
   --blue4: #4d8dff;
   --white: #ffffff;
   --text: #e6e9f5;
-  --radius: 16px;
+  --radius: 18px;
   --transition: 0.3s ease;
   --font: "Inter", system-ui, sans-serif;
 }
@@ -60,23 +60,23 @@ body {
 
 /* HERO */
 .hero {
-  padding: 100px 7% 60px;
+  padding: 110px 7% 70px;
   text-align: center;
 }
 
 .hero-inner h1 {
-  font-size: 2.6rem;
-  margin-bottom: 8px;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
 .hero-inner h2 {
   font-size: 1.3rem;
   opacity: 0.85;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .hero-inner button {
-  padding: 10px 22px;
+  padding: 12px 26px;
   border-radius: 999px;
   border: none;
   background: var(--blue3);
@@ -91,80 +91,94 @@ body {
   transform: translateY(-2px);
 }
 
-/* SECTIONS — FIX CENTRAGE */
+/* SECTIONS */
 .section {
-  padding: 40px 7%;
+  padding: 60px 7%;
   display: flex;
   justify-content: center;
 }
 
-/* CARD — VRAIMENT CENTRÉE */
+/* CARD — version harmonieuse */
 .card {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  padding: 28px 26px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px);
+  padding: 45px 40px;              /* PLUS D’ESPACE */
   border-radius: var(--radius);
-  max-width: 650px;        /* plus petit */
+  max-width: 780px;                /* LARGEUR PLUS HARMONIEUSE */
   width: 100%;
-  margin: 0 auto;          /* CENTRAGE RÉEL */
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;                  /* CENTRAGE PARFAIT */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 /* TITRES */
 .section-title {
-  font-size: 1.6rem;
-  margin-bottom: 16px;
+  font-size: 1.9rem;
+  margin-bottom: 25px;
   color: var(--white);
   text-align: center;
 }
 
+/* TEXTE */
 .section-text {
-  line-height: 1.6;
-  opacity: 0.9;
+  line-height: 1.75;               /* PLUS AÉRÉ */
+  opacity: 0.95;
   text-align: center;
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 }
 
 /* COMPÉTENCES */
 .skills-list {
   display: grid;
-  gap: 14px;
+  gap: 22px;                       /* PLUS D’ESPACE ENTRE LES BLOCS */
 }
 
 .skill-item {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 14px 12px;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 20px 18px;              /* PLUS D’ESPACE INTERNE */
+  border-radius: 14px;
   transition: var(--transition);
+}
+
+.skill-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.skill-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .skill-item:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* LANGUES */
 .lang-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;                       /* PLUS D’ESPACE */
 }
 
 .lang-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
 }
 
 .lang-points {
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 
 .lang-points span {
-  width: 14px;
-  height: 14px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
 }
 
@@ -174,8 +188,8 @@ body {
 
 /* CONTACT */
 .contact-info p {
-  margin: 6px 0;
-  font-size: 0.95rem;
+  margin: 10px 0;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -191,10 +205,15 @@ body {
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 18px;
+  padding: 25px;
   opacity: 0.7;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .card {
+    padding: 32px 24px;
+    max-width: 92%;
+  }
+}

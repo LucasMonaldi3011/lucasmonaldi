@@ -344,9 +344,34 @@ body {
     padding: 60px 5% 40px;
   }
 
-  .hero-content {
-    padding: 28px 22px;
-  }
+.hero-content {
+  max-width: 700px;
+  text-align: center;
+  background: transparent;
+  box-shadow: none;
+  padding: 40px 20px;
+  color: white;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
 
   .section {
     padding: 24px 5%;

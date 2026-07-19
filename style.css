@@ -382,3 +382,39 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lang-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+.lang-points {
+  display: flex;
+  gap: 6px;
+}
+
+.lang-points span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #d1d5db;
+  transition: background var(--transition);
+}
+
+.lang-points span.active {
+  background: var(--blue-main);
+}
